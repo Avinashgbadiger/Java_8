@@ -1,5 +1,6 @@
 package service.predicate;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 public interface PredicatePOC {
@@ -19,5 +20,9 @@ public interface PredicatePOC {
         Predicate<String> and=stringPredicate.and(endCharPredicate);
 
         System.out.println(and.test("vickyavinash"));
+
+        int num[]={3,2,6,8,9,1};
+        int sum = Arrays.stream(num).filter(e -> e%2==0).sum();
+        System.out.println(sum);
     }
 }

@@ -29,3 +29,4 @@ You don't always need to override the compare method, as you can use predefined 
 Takes input but does not return anything.
 Mainly used for performing actions on the input (like printing or modifying it).
 Uses the accept() method to handle the input.
+andThen();
